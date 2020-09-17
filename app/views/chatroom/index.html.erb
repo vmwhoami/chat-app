@@ -1,51 +1,101 @@
+<div class="ui fluid raised card ">
+  <div class="content ">
 
-
-
-<div class="ui fluid raised card chatbox">
-  <div class="content">
-    <div class="ui two column grid">
-<%#   left menu  %>
-      <div class="ui teal inverted vertical menu chatmenu">
-        <a class="item">
-          Home
-        </a>
-        <a class="item">
-          Messages
-        </a>
-        <a class="item">
-          Friends
-        </a>
+    <div class="ui grid ">
+      <div class="three wide column">
+        <div class="ui inverted teal vertical pointing menu">
+          <a class=" item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
       </div>
 
-    <div class="ui feed">
-        <div class="event">
-          <div class="label">
-            <img src="/images/avatar/small/helen.jpg">
-          </div>
-          <div class="content">
-          </div>
-          </div>
-          <div class="event">
-              <div class="extra text">
-                Have you seen what's going on in Israel? Can you believe it.
+
+      <div class="thirteen wide stretched column  ">
+        <div class="ui segment">
+
+          <!-- feed -->
+
+          <div class="ui feed ">
+            <div class="event">
+              <div class="label">
+                <img src=<%= asset_path('helen') %>>
               </div>
-          </div>
-            <div class="extra-content">
-                <div class="ui form">
-                  <div class="field">
-                    <label>Short Text</label>
-                    <textarea rows="2"></textarea>
-                  </div>
+              <div class="content">
+                <div class="date">
+                  3 days ago
                 </div>
-                <div class="ui twelve buttons">
-  <button class="ui active button">Send</button>
-
-</div>
+                <div class="summary">
+                  <a>Helen Troy</a> added 2 photos
+                </div>
+                <div class="extra images">
+                  <a><img src=<%= asset_path('Microverse_picture') %>></a>
+                  <a><img src=<%= asset_path('Microverse_picture') %>></a>
+                </div>
               </div>
-        </div>
+            </div>
+            <div class="event">
+              <div class="label">
+                <img src=<%= asset_path('laura') %>>
+              </div>
+              <div class="content">
+                <div class="date">
+                  3 days ago
+                </div>
+                <div class="summary">
+                  <a>Laura Faucet</a> created a post
+                </div>
+                <div class="extra text">
+                  Have you seen what's going on in Israel? Can you believe it.
+                </div>
+              </div>
+            </div>
 
-        
+            <div class="event">
+              <div class="label">
+                <img src=<%= asset_path('laura') %>>
+              </div>
+              <div class="content">
+                <div class="date">
+                  3 days ago
+                </div>
+                <div class="summary">
+                  <a>Laura</a> created a post
+                </div>
+                <div class="extra text">
+                <%= @messages.first.body%>
+                </div>
+              </div>
+            </div>
+
+            <div class="extra content">
+              <div class="ui  transparent left icon input chat">
+
+                <input type="text" placeholder="Add Comment...">
+
+                <div class="ui button">Send</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- feed -->
+
+
+
+
+        </div>
+      </div>
     </div>
+
+
+
 
   </div>
 </div>
