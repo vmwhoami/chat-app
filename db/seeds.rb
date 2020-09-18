@@ -9,3 +9,9 @@
 5.times do |num|
   User.create(username:"adam#{num}",password_digest:"password#{num}")
 end
+
+u = User.second
+5.times do |n|
+
+  Message.create(body:"This is a message #{n}", user_id:u.id)
+end
