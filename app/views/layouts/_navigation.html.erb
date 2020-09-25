@@ -14,9 +14,11 @@
 
 
     <div class="right menu">
-        <%= link_to  "Login", login_path,class:"item" %>
+        <%# link_to  "Login", login_path,class:"item" %>
       <a class="item">Logout</a>
-      <a class="item">Signup</a>
+
+        <%= link_to  "Register", new_user_path, class:"item" %>
+ 
     </div>
   </div>
 </div>

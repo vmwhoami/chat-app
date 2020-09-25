@@ -2,9 +2,9 @@
   <div class="column">
     <div class="ui middle aligned center aligned grid ">
       <div class="column">
-        <form class="ui large form">
+      
           <div class="ui stacked segment">
-            <%= form_with ( model:@user url: 'user', method: :post) do |f| %>
+            <%= form_with model:@user, class: 'ui large form'  do |f| %>
             <div class="field">
               <div class="ui left icon input">
                 <i class="user icon"></i>
@@ -25,13 +25,13 @@
               </div>
             </div>
             <div class="ui Teal buttons">
-              <%= f.button "Sign up", class: "ui positive button Big" %>
+              <%= f.button "Register", class: "ui positive button Big" %>
               <% end %>
 
             </div>
           </div>
           <div class="ui error message"></div>
-        </form>
+ 
       </div>
     </div>
   </div>
