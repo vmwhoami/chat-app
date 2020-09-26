@@ -21,7 +21,7 @@
         <div class="ui segment">
 
           <!-- feed -->
-
+            <%= current_user.email if current_user %>
           <div class="ui feed ">
             <%=  render @messages %>
             <!-- Send messages form -->

@@ -16,8 +16,8 @@ class SessionController < ApplicationController
   end
 
   def destroy
-    @current_user = nil
+    log_out
     flash[:danger] = "You have signed out"
-    redirect_to root_path
+    redirect_to root_url
   end
 end
