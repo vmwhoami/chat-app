@@ -1,17 +1,22 @@
+<% @messages.each do |m| %>
+<%= m.user.username %>
+<%= m.body %>
+<%= m.created_at %>
+<% end %>
+
 <div class="event">
   <div class="label">
-   <%= current_user.username if current_user %>
-    <img src=<%# asset_path('laura') %>>
+    <img src=<%=  %>>
   </div>
   <div class="content">
     <div class="date">
       3 days ago
     </div>
     <div class="summary">
-      <a><%# message.user.username%></a> created a post
+      <a><%# current_user.user.username%></a> created a post
     </div>
     <div class="extra text">
-      <%# message.body%>
+      <%#message.body%>
     </div>
   </div>
 </div>
