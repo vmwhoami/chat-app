@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   root 'chatroom#index'
   resources :users
- 
+ mount ActionCable.server, at: '/cable'
 end
