@@ -1,0 +1,46 @@
+<div class="ui two column centered grid">
+  <div class="column">
+    <div class="ui middle aligned center aligned grid ">
+      <div class="column">
+      
+          <div class="ui stacked segment">
+            <%= form_with model:@user, class: 'ui large form'  do |f| %>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <%= f.text_field :username, placeholder: "Username" %>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user circle icon"></i>
+                <%= f.text_field :main_img, placeholder: "Avatar picture link" %>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="envelope icon"></i>
+                <%= f.email_field :email, placeholder: "Email" %>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                <%= f.password_field :password, placeholder: "Password" %>
+              </div>
+            </div>
+            <div class="ui Teal buttons">
+              <%= f.button "Register", class: "ui positive button Big" %>
+              <% end %>
+
+            </div>
+          </div>
+          
+       <%= render 'layouts/errors' %>
+ 
+      </div>
+    </div>
+  </div>
+</div>

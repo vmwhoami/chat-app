@@ -1,17 +1,21 @@
-
 <div class="ui teal top stackable inverted menu ">
-<div class="ui container">
-  <div class="item">
-    <i class="braille icon"></i>
+  <div class="ui container">
+ 
+    <div class="item">
+     <%= link_to root_path,class: 'item' do %>
+      <i class="braille icon"></i>
+    <% end %>
+    </div>
+      
+       <%= link_to "Chatroom", root_path,class: 'item' %>
+
+
+     <%#   login_menu_btn %>
+    <div class="right menu">
+ <%= menu_btns(current_user) %>
+      <%#logout_menu_btn%>
+
+      <%# register_menu_btn%>
+    </div>
   </div>
-  <a class="item">Chatroom</a>
-  <a class="item">Testimonials</a>
-  <a class="item">Sign-in</a>
-  <div class="right menu">
-  
-   <a class="item">Login</a>
-    <a class="item">Logout</a>
-    <a class="item">Signup</a>
-  </div>
-</div>
 </div>
