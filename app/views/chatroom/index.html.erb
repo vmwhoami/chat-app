@@ -23,13 +23,17 @@
           <!-- feed -->
             <%= current_user.email if current_user %>
           <div class="ui feed ">
-            <%=  render @messages %>
+          
+            <%=  render 'messages/message' %>
             <!-- Send messages form -->
 
             <div class="extra content">
               <div class="ui  transparent left icon input chat">
                 <input type="text" placeholder="Add Comment...">
-                <div class="ui button">Send</div>
+                <div class="ui button">Send
+                
+                
+                </div>
               </div>
             </div>
 

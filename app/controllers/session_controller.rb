@@ -1,6 +1,7 @@
 class SessionController < ApplicationController
+  before_action :check_login, only: [:new, :create]
+  
   def new
-
   end
 
   def create
@@ -21,4 +22,14 @@ class SessionController < ApplicationController
     flash[:success] = "You have signed out"
     redirect_to root_url
   end
+
+private
+ 
+def check_login
+  if current_user
+    flash[:error] = "You are already logged in"
+    redirect_to root_path 
+  end
+end
+
 end
