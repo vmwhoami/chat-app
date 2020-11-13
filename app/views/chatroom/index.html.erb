@@ -22,12 +22,12 @@
 
           <!-- feed -->
 
-          <div class="ui feed" id="messages"  >
-          <div class="ui feed" id="message-container">
-            <%=  render @messages %>
-         </div>
+         <div class="ui feed display-flex" id="messages"  >
+            <div class="ui feed" id="message-container">
+              <%=  render @messages %>
+          </div>
             <!-- Send messages form -->
-            <div class="extra content">
+            <div class="extra content form_input">
               <%= form_for(@message, html:{ class: "transparent left icon input chat"},role:"form", url: message_path, remote: true) do |f| %>
               <div class="ui  transparent left icon input chat">
                 <%= f.text_field :body, placeholder:"Add Comment..." %>

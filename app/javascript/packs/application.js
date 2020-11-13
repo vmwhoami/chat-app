@@ -18,6 +18,14 @@ require("channels")
 
 require("semantic-ui-sass")
 
+const scrollButtom = function () {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight)
+  }
+}
+
 $(document).on('turbolinks:load', function () {
   $('.ui.dropdown').dropdown();
+  scrollButtom();
 })
+
