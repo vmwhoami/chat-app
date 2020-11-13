@@ -7,16 +7,15 @@
     <% end %>
     </div>
       
-    <a class="item">Chatroom</a>
-   <%=   link_to  "Login", login_path,class:"item"   if !current_user %>
+       <%= link_to "Chatroom", root_path,class: 'item' %>
+
+
+     <%#   login_menu_btn %>
     <div class="right menu">
- 
-   <%=link_to  "Logout", logout_path, method: :delete ,class:"item"  if current_user%>
+ <%= menu_btns(current_user) %>
+      <%#logout_menu_btn%>
 
-    
-   
-   <%= link_to  "Register", new_user_path, class:"item" if !current_user%>
-
+      <%# register_menu_btn%>
     </div>
   </div>
 </div>
