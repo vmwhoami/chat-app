@@ -1,25 +1,20 @@
-<% @messages.each do |m| %>
+  
 <div class="event">
-
   <div class="label">
-    <%= image_tag m.user.main_img %>
+    <%= image_tag message.user.main_img %>
   </div>
-  <div class="content">
-
+  <div class="content" >
     <div class="summary">
-      <%= m.user.username %>
+      <%= message.user.username %>
     </div>
 
     <div class="date">
-      <%= m.created_at %>
+      <%= message.created_at %>
     </div>
 
     <div class="extra text">
-      <%= m.body %>
+      <%= message.body %>
     </div>
-
   </div>
-  
 </div>
-
-<% end %>
+ 
