@@ -32,11 +32,17 @@ gem 'jquery-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+group :production do
+gem 'pg'
+end
+
 group :development, :test do
-  gem 'sqlite3', '~> 1.4'
+  # gem 'sqlite3', '~> 1.4'
+  gem 'pg'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
 end
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
