@@ -16,9 +16,9 @@ messages = [
   " fuga atque ducimus debitis a, nemo vitae!"
 ]
 
-10.times do |message|
+5.times do |m|
   Message.create!(
-     body: messages.sample ,
+     body: messages[m] ,
       user: @users.sample
   )
 end
