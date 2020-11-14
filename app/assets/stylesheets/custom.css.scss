@@ -36,3 +36,18 @@
  flex-direction: column;
  justify-content: center;
 }
+.username_container{
+display: flex;
+
+}
+.username{
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+}
+.my_time{
+  justify-self: flex-end;
+text-transform: initial;
+font-weight: initial;
+}

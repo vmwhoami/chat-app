@@ -4,18 +4,13 @@
     <%= image_tag message.user.main_img  if message%>
   </div>
   <div class="content" >
-    <div class="summary">
-   
-      <%= message.user.username %>
-    </div>
-
-    <div class="date my_date">
-     <%= distance_of_time_in_words(message.created_at.to_i - Time.now.to_i) %>
-      <%= message.created_at %>
+    <div class="summary username_container">
+    <p class="username"><%= message.user.username %>   <span class= "my_time"> wrote <%= distance_of_time_in_words(message.created_at.to_i - Time.now.to_i) %> ago </span></p>
     </div>
 
     <div class="extra text">
-      <%= message.body %>
+    <p class="message"> <%= message.body %></p>
+     
     </div>
   </div>
 </div>
