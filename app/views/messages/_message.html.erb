@@ -1,15 +1,16 @@
   
 <div class="event">
   <div class="label image_container">
-    <%= image_tag message.user.main_img %>
+    <%= image_tag message.user.main_img  if message%>
   </div>
   <div class="content" >
     <div class="summary">
+   
       <%= message.user.username %>
     </div>
 
     <div class="date my_date">
-     
+     <%= distance_of_time_in_words(message.created_at.to_i - Time.now.to_i) %>
       <%= message.created_at %>
     </div>
 
