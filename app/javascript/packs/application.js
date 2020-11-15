@@ -24,6 +24,11 @@ const scrollButtom = function () {
   }
 }
 
+$("#btn").on("click", function () {
+  $(".button").trigger("reset");
+})
+
+
 $(document).on('turbolinks:load', function () {
   $('.ui.dropdown').dropdown();
   scrollButtom();
