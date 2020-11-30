@@ -1,24 +1,86 @@
-# Chat app with semantic UI
+# Chat app with Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project I developed a chat app using Ruby on Rails websocket with Semantic Ui for the front-end.
 
-Things you may want to cover:
+Some of the advanced concepts explored in this project includes.
 
-* Ruby version
+- Rails websocket
+- Semantic Ui
+-
 
-* System dependencies
+![screenshot](./app/assets/images/chatap.gif)
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
 
-* Database initialization
+## Live Demo
 
-* How to run the test suite
+[Live Demo](https://chatterboxerr.herokuapp.com/)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+To get a local copy up and running follow these simple example steps.
 
-* ...
+### Prerequisites
+
+Ruby: 2.6.3
+Rails: 6.0.3
+Postgres: >=9.5
+
+### Setup
+
+```bash
+
+$ git clone https://github.com/vmwhoami/chat-app
+$ cd ror-social-scaffold
+```
+
+Install gems with:
+
+```
+bundle install
+```
+
+Setup database with:
+
+> make sure you have postgress sql installed and running on your system
+
+```
+   rails db:create
+   rails db:migrate
+```
+
+### Usage
+
+Start server with:
+
+```
+    rails server
+```
+
+Open `http://localhost:3000/` in your browser.
+
+# Author
+
+👤 **Vitalie Melnic**
+
+- Github: [@vmwhoami](https://github.com/vmwhoami/)
+- Twitter: [@vmwhoami](https://twitter.com/acushlakoncept)
+- Linkedin: [vitalie-melnic](https://www.linkedin.com/in/vitalie-melnic/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse TSE members who reviewed and gave us positive feedbacks and guidance.
+- Microverse
