@@ -1,4 +1,5 @@
-class ApplicationController < ActionController::Base
+# frozen_string_literal: true
 
-include SessionHelper
+class ApplicationController < ActionController::Base
+  include SessionHelper
 end
