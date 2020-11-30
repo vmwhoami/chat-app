@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class SessionController < ApplicationController
   before_action :check_login, only: %i[new create]
 
@@ -26,9 +24,9 @@ class SessionController < ApplicationController
   private
 
   def check_login
-    if current_user
-      flash[:error] = 'You are already logged in'
-      redirect_to root_path
-    end
+    return unless current_user
+
+    flash[:error] = 'You are already logged in'
+    redirect_to root_path
   end
 end

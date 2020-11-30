@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class User < ApplicationRecord
   after_initialize :set_def_img
   validates :username, presence: true, uniqueness: { case_sensitive: false }, length: { minimum: 4, maximum: 50 }

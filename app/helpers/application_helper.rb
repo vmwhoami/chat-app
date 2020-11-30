@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module ApplicationHelper
   def register_btn
     link_to 'Register', new_user_path, class: 'item'
