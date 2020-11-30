@@ -1,53 +1,52 @@
 @import "semantic-ui";
 
-
-.login{
+.login {
   max-width: 25rem;
-
 }
 
-.chatbox{
+.chatbox {
   height: 450px;
 }
 
-.chat{
+.chat {
   width: 100%;
 }
 
- 
-#messages{
+#messages {
   min-height: 30rem;
-  max-height:  30rem;
+  max-height: 30rem;
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
-.display-flex{
+
+.display-flex {
   display: flex;
   flex-direction: column;
 }
 
-.form_input{
-  margin-top: auto
+.form_input {
+  margin-top: auto;
 }
 
-.image_container{
- display: flex !important;
- flex-direction: column;
- justify-content: center;
+.image_container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
-.username_container{
-display: flex;
 
+.username_container {
+  display: flex;
 }
-.username{
-  display: inline-block;
+
+.username {
   width: 100%;
   text-transform: uppercase;
   display: flex;
 }
-.my_time{
+
+.my_time {
   justify-self: flex-end;
-text-transform: initial;
-font-weight: initial;
+  text-transform: initial;
+  font-weight: initial;
 }

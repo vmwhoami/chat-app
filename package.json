@@ -9,10 +9,35 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "semantic-ui-sass": "^2.4.2",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.0.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmwhoami/chat-app.git"
+  },
+  "keywords": [],
+  "author": "vmwhoami <vmwhoami@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmwhoami/chat-app/issues"
+  },
+  "homepage": "https://github.com/vmwhoami/chat-app#readme"
 }
