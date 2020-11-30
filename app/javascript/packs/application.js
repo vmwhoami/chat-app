@@ -24,13 +24,14 @@ const scrollButtom = function () {
   }
 }
 
-$("#btn").on("click", function () {
-  $(".button").trigger("reset");
-})
-
+const input = document.getElementById('input')
+const button  =   document.querySelector('.button')
+button.addEventListener('click', function(){
+   alert("hi there");
+});
+ 
 
 $(document).on('turbolinks:load', function () {
   $('.ui.dropdown').dropdown();
   scrollButtom();
 })
-

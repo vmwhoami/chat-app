@@ -1,5 +1,9 @@
 import consumer from "./consumer"
 
+const input = document.querySelector('.input');
+
+ 
+
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {
     // Called when the subscription is ready for use on the server
@@ -12,9 +16,10 @@ consumer.subscriptions.create("ChatroomChannel", {
   received(data) {
     // Called when there's incoming data on the websocket for this channel
     document.querySelector("#message-container").insertAdjacentHTML('beforeend', data.modified_message);
-    scrollButtom();
-
+    
+    
   }
 
 
 });
+

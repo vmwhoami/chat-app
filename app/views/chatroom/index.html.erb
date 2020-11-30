@@ -30,9 +30,9 @@
             <div class="extra content form_input">
               <%= form_for(@message, html:{ class: "transparent left icon input chat"},role:"form", url: message_path, remote: true) do |f| %>
               <div class="ui  transparent left icon input chat">
-                <%= f.text_field :body, placeholder:"Add Comment..." %>
+                <%= f.text_field :body, placeholder:"Add Comment...", id: "input" %>
                 <div class="ui button" id="btn">
-                  <%= f.submit "Send", class:"ui button" %>
+                  <%= f.submit "Send", class:"ui button",id:"btn" %>
    
                 </div>
               </div>
