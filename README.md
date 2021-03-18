@@ -6,7 +6,7 @@ Some of the advanced concepts explored in this project includes.
 
 - Rails websocket
 - Semantic Ui
--
+ 
 
 ![screenshot](./app/assets/images/chatap.gif)
 
